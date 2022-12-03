@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background-image: url(pur.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+nav{
+    background-color: rgb(0, 68, 255);
+}
+
+.logo{
+    font-size: 30px;
+    color: whitesmoke;
+    line-height: 80px;
+    margin-left: 100px;
+}
+
+/* Heading background and Links Started*/
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    margin: 8px;
+}
+/* Heading Background and links Ended*/
+
+/* Hover Started */
+nav ul li a.active{
+    background: rgba(255, 38, 0, 0.877);
+    padding: 6px;
+    border-radius: 2px;
+}
+
+nav ul li a:hover{
+    background-color: green;
+    transition: .5s;
+    padding: 6px;
+    border-radius: 2px;
+}
+/* Hover Ended */
+
+/* Starting navigation Section */
+#checkbtn{
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 14px;
+    font-size: 30px;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ ul{
+    left: 0;
+}
+
+/* Ending navigation Section */
+
+p{
+    color: rgba(188, 26, 26, 0.964); 
+    margin-top: 50px;
+    background: #fff;
+    padding: 30px;
+    font-size: 18px;
+    border-radius: 7px;
+    text-align: center;
+    margin-right: 400px;
+    margin-left: 400px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.mypages{
+    text-align: center;
+    margin-top: 30px;
+}
+
+span{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.mypages ul{
+    background-color: rgba(255, 0, 0, 0.823);
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    margin-left: 580px;
+    margin-right: 590px;
+}
+
+.mypages ul li a{
+    color: #fff;
+    font-size: 16px;
+}
+
+.mypages ul:hover{
+    transition: 1s;
+    background-color: green;
+}
+
+.classtwo{
+    background-color: white;
+}
+
+.secondpart{
+    border-radius: 3px;
+    margin-left: 395px;
+    margin-right: 500px;
+    margin-top: -80px;
+}
+
+form{
+    padding: 60px;
+}
+
+form input{
+    padding: 20px;
+    width: 120%;
+}
+
+button{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    width: 136%;
+    cursor: pointer;
+    font-size: 17px;
+    border-radius: 10px;
+    border: none;
+}
+
+#doing{
+    color: black;
+    font-size: 30px;
+}
+
+/* Device Responsive and Navigation bar */
+@media (max-width: 532px){
+    
+    .logo{
+        font-size: 22px;
+        color: whitesmoke;
+        line-height: 80px;
+        margin-left: 25px;
+    }
+
+    #checkbtn{
+        display: block;
+    }
+    
+    nav ul{
+        width: 100%;
+        height: 70vh;
+        background: rgba(255, 0, 21, 0.966);
+        position: absolute;
+        right: 500px;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+    
+    nav ul li a{
+        color: #fff;
+        font-size: 15px;
+        margin: 16px;
+    }
+
+    nav ul li a.active{
+        background: rgba(255, 0, 21, 0.966);
+    }
+    
+    nav ul li a:hover{
+        background-color: green;
+        transition: .5s;
+    }
+
+    p{
+        display: flex;
+        margin: 0;
+        font-size: 17px;
+        margin-top: 100px;
+        height: 485px;
+    }
+
+    body{
+        background-image: url(pur.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 140%;  
+      }
+
+        
+    .mypages{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    span{
+        color: whitesmoke;
+        font-size: 22px;
+    }
+
+    .mypages ul{
+        margin: 0;
+        margin-left: 100px;
+        margin-right: 100px;
+        border: 1px solid;
+        border-radius: 4px;
+    }
+
+    .mypages ul li a{
+        color: #fff;
+        font-size: 11px;
+    }
+
+    .mypages ul:hover{
+        transition: 1s;
+        background-color: green;
+    }
+
+    .classtwo{
+        background-color: white;
+    }
+
+    .secondpart{
+        border-radius: 3px;
+        margin: 0;
+        margin-top: -80vh;
+        line-height: 50px;
+    }
+
+    form{
+        padding: 30px;
+    }
+
+    form input{
+        padding: 24px;
+        width: 86%;
+    }
+
+    form textarea{
+        width: 102%;
+    }
+
+    button{
+        padding: 10px;
+        background-color: green;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+        font-size: 17px;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    #doing{
+        color: black;
+        font-size: 25px;
+    }
+
+    h2{
+        font-size: 8px;
+    }
+
+}
+/* end of divice responsive */
+
+
+
+/* Working on a photo */
+.thirdsec{
+    background-color: rgb(51, 50, 50);
+}
+
+.classes{
+    text-align: center;
+}
+
+img{
+    clip-path: circle();
+    height: 200px;
+}
+
+.new{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 35px;
+}
+
+.graph{
+    text-align: center ;
+}
+
+#to{
+    font-size: 15px;
+}
+
+.fourlet{
+    background-color: rgb(51, 50, 50);
+}
+
